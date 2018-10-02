@@ -41,7 +41,9 @@ foreach($rows as $row){
     if($ocurrence == 1){        //Primeira linha do dia
         foreach($columns as $col) {
             //Define o dia da semana.
-            if(isset($col->strong)) $dia->d_sem = reset($col->strong);
+            if (isset($col->strong)) {
+                $dia->d_sem = reset($col->strong);
+            }
         }
     }
 
